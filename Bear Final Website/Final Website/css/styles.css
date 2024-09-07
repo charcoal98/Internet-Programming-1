@@ -1,0 +1,326 @@
+body,
+header,
+nav,
+main,
+footer,
+h1,
+div,
+img,
+ul,
+figure,
+figcaption,
+section,
+article,
+aside,
+audio,
+video,
+form {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+body {
+  background-image: url("../images/DarkerBG.png");
+  background-repeat: repeat;
+  background-position: top left;
+  font-family: "AR Destine";
+  font-weight: normal;
+  padding-bottom: 0;
+  color: #ddd;
+}
+.container {
+  padding: 0;
+}
+img,
+video {
+  max-width: 100%;
+  display: block;
+}
+
+header img {
+  margin: 0 auto;
+  height: 100%;
+}
+
+/* Style rules for navigation area */
+nav {
+  padding: 1%;
+  margin-bottom: 1%;
+}
+
+nav ul {
+  list-style-type: none;
+  text-align: center;
+}
+
+nav li {
+  font-size: 1.5em;
+  font-family: "AR Destine";
+  border-top: 1px solid #fff;
+}
+
+nav li:first-child {
+  border-top: none;
+}
+
+nav li a {
+  display: block;
+  color: #fff;
+  padding: 0.5em 1em;
+  text-decoration: none;
+}
+
+nav li:hover {
+  background-color: #8d2413;
+  background-image: none;
+}
+
+.nav {
+  background-image: url("../images/LighterBG.png");
+  background-repeat: repeat;
+  background-position: top left;
+}
+
+.tablet-desktop {
+  display: none;
+}
+
+.desktop {
+  display: none;
+}
+
+header {
+  background-image: url("../images/HeaderBG.png");
+  background-position: top left;
+  background-repeat: repeat;
+}
+
+footer {
+  background-image: url("../images/LighterBG.png");
+  margin-bottom: 0;
+  height: 100%;
+}
+
+footer p {
+  font-size: 0.75em;
+  text-align: center;
+  color: #fff;
+  padding: 0 1em;
+}
+
+footer p a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.para {
+  background-image: url("../images/LighterBG.png");
+  background-position: top left;
+  background-repeat: repeat;
+  margin-top: 10px;
+  border: 1px solid #000;
+  padding: 2px;
+}
+
+.paragraphs {
+  margin: auto;
+}
+
+table {
+  border: 1px solid #000;
+  border-collapse: collapse;
+  margin: 0 auto;
+  width: 100%;
+}
+
+th,
+td {
+  border: 1px solid #000;
+  padding: 2%;
+}
+
+th {
+  background-image: url("../images/HeaderBG.png");
+  background-position: top left;
+  background-repeat: repeat;
+  color: #fff;
+  width: 100px;
+  font-size: 1.15em;
+}
+
+tr {
+  background-image: url("../images/DarkerBG.png");
+  background-position: top left;
+  background-repeat: repeat;
+  color: #aaa;
+}
+
+tr:nth-child(odd) {
+  background-image: url("../images/LighterBG.png");
+  background-position: top left;
+  background-repeat: repeat;
+}
+
+tr:nth-child(even) {
+  color: #bbb;
+}
+
+dt {
+  font-size: 20px;
+}
+
+dd {
+  font-size: 16px;
+}
+.family {
+  padding-left: 25%;
+}
+.familyPic {
+  height: 150px;
+}
+h3 {
+  text-align: center;
+}
+.div-padding {
+  padding: 50px;
+}
+a {
+  color: #ddd;
+  text-decoration: none;
+}
+
+fieldset,
+input,
+select,
+textarea {
+  margin-bottom: 2%;
+}
+
+fieldset legend {
+  font-weight: bold;
+  font-size: 1.25em;
+}
+
+label {
+  display: block;
+  padding-top: 3%;
+}
+
+form-grid {
+}
+form #submit {
+  display: block;
+  padding: 2%;
+  background-image: url("../images/LighterBG.png");
+  font-size: 1em;
+  font-family: "AR Destine";
+  border-radius: 0px;
+  color: #ddd;
+  border: 1px solid #aaa;
+  margin: 0 auto;
+}
+
+form #submit:hover {
+  background-color: #8d2413;
+  background-image: none;
+}
+
+fieldset {
+  background-image: url("../images/LighterBG.png");
+}
+
+/*Tablet Veiwport*/
+@media screen and (min-width: 630px), print {
+  .tablet-desktop {
+    display: block;
+  }
+  .Logo {
+    margin-right: 0;
+  }
+
+  body {
+    font-size: 25px;
+  }
+  .para {
+    border: 1px solid #000;
+    margin-top: 0;
+  }
+
+  .grid-padding {
+    padding: 10px;
+    margin: 10px;
+  }
+  .two-columns {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 0px;
+  }
+  .three-columns {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 0px;
+  }
+
+  .three-columns-padding {
+    padding: 10%;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  table {
+    margin: 0;
+  }
+
+  /* Tablet Viewport: Style rules for nav area */
+  nav ul {
+    text-align: center;
+  }
+
+  nav li {
+    border-top: none;
+    display: inline-block;
+    border-right: 1px solid #fff;
+  }
+
+  nav li:last-child {
+    border-right: none;
+  }
+
+  nav li a {
+    padding: 0.1em 0.75em;
+  }
+
+  header img {
+    height: 64px;
+    width: auto;
+  }
+
+  header {
+    background-image: none;
+    margin-right: 0px;
+    margin-left: auto;
+    padding-bottom: 2%;
+  }
+
+  .nav {
+    display: grid;
+    position: -webkit-sticky;
+    position: sticky;
+    grid-template-columns: 64px auto;
+    padding-left: 10%;
+    padding-right: 5%;
+  }
+  form {
+    display: block;
+  }
+}
+@media screen and (min-width: 1015px), print {
+  .Content {
+    display: grid;
+    grid-template-columns: 40% 60%;
+  }
+  .desktop {
+    display: block;
+  }
+}

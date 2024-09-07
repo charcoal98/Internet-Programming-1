@@ -1,0 +1,539 @@
+@media screen and (orientation:landscape){
+    body {
+        --boxH: 40vh;
+        --boxW: 50vw;
+        --cSize: calc(var(--boxH) / calc(4 / 1))
+    }
+}
+
+body {
+    --bg: #480101;
+    --box: url("../images/options_background_dimetro1.png");
+    background: var(--bg);
+    font-size: calc(calc(var(--boxH) - var(--cSize)) / 10);
+    font-weight: normal;/*Finaly comments*/
+    font-family: "AR DESTINE";
+    color: rgb(197, 172, 172);
+    min-Width: 500px;
+    background-image: var(--bg);
+    background-attachment: scroll;
+    background-position: left top;
+    margin:0;
+    margin-top:0;
+}
+
+img {
+    margin-top: .5vh;
+    margin-left:.5vw;
+    margin-right:.5vw;
+}
+/*elvis.mahmutovic@oasisdigital.com*/
+img.Banner {
+    width:100%;
+    margin:0px;
+}
+
+.img1 {
+    position: relative;
+    margin-top: 0px;
+    top:calc(calc(-.85 * var(--boxH)) - 2vh);
+    left:calc(calc(var(--boxW) / 2) - 5vw);
+    height: calc(var(--boxH) - 1vh);
+    width: calc(calc(var(--boxW) / 2) - 5vw);
+}
+
+.img2 {
+    width: calc(calc(var(--boxW) / 2) - 1vw);
+    height: calc(calc(calc(var(--boxH) * 2) / 2) - 1vh);
+}
+
+.img3 {
+    margin-top: 2.5vh;
+    height: calc(var(--boxH) - 10vh);
+    width: calc(var(--boxW) + 4.5vw);
+}
+
+nav {
+    background: var(--box);
+    width:auto;
+    text-align: center;
+    overflow:auto;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0px;
+    z-index: 2;
+    background-attachment: fixed;
+    border-style: hidden;
+}
+
+nav:before,
+nav:after {
+    font-size: 0px; 
+    content: ".";
+    position: absolute;    
+}
+
+nav:before {
+    border-bottom: calc(var(--cSize) / 2) solid var(--bg);
+    border-right: calc(var(--cSize) / 2) solid transparent;
+    left: 0;
+    bottom: 0;
+}
+
+nav:after {
+    border-bottom: calc(var(--cSize) / 2) solid var(--bg);
+    border-left: calc(var(--cSize) / 2) solid transparent;
+    right: 0;
+    bottom: 0;
+}
+
+button { 
+    font-size: 2em;
+    background: var(--box);
+    color:  rgb(197, 172, 172);
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border: rgb(197, 172, 172);
+    border-style: solid;
+	border-radius: 5px;
+    font-family: "AR DESTINE";
+    background-attachment: scroll;
+    
+}
+
+button:hover, button:focus, button:active { 
+    color: red;
+    background: rgb(197, 172, 172);
+    cursor: pointer; /* displays a hand */
+    font-family:"AR DESTINE";
+    text-decoration: line-through;
+    border: black solid;
+}
+
+
+
+.box1 {
+    padding: 0px;
+    height:var(--boxH);
+    margin: 0;
+    margin-left: 6.6vw;
+    margin-right: auto;
+    width: var(--boxW);
+    position: relative;
+    background: var(--box);
+    background-attachment: fixed;
+    
+    
+}
+
+.head1 {
+    
+    margin-left:var(--cSize);
+}
+
+.cont1 {
+    border-left: 0px solid Black;
+    border-right: 0px solid Black;
+    margin-left: calc(var(--cSize)/2);
+}
+
+.head1:before,
+.head1:after,
+.foot1:before,
+.foot1:after {
+    font-size: 0px; 
+    content: ".";
+    position: absolute;    
+}
+
+.head1:before {
+    border-top: var(--cSize) solid var(--bg);
+    border-right: var(--cSize) solid transparent;
+    left: 0;
+    top: 0;
+}
+
+.head1:after {
+    border-top: 0px solid var(--bg);
+    border-left: 0px solid transparent;
+    right: 0;
+    top: 0;
+}
+
+.foot1:before {
+    border-bottom: 0px solid var(--bg);
+    border-right: 0px solid transparent;
+    left: 0;
+    bottom: 0;
+}
+
+.foot1:after {
+    border-bottom: 0px solid var(--bg);
+    border-left: 0px solid transparent;
+    right: 0;
+    bottom: 0;
+}
+
+.box2 {
+    padding: 0px;
+    border-width: 0px;
+    margin: 0;
+    margin-left: 6.6vw;
+    margin-right: auto;
+    height:var(--boxH);
+    width: var(--boxW);
+    position: relative;
+    background: var(--box);
+    background-attachment: fixed;
+}
+
+.head2 {
+    margin-left:calc(var(--cSize)/2);
+    
+}
+
+.cont2 {
+    border-left: 0px solid Black;
+    border-right: 0px solid Black;
+    margin-left:var(--cSize);
+    margin-right:calc(var(--cSize)/2);
+}
+
+.head2:before,
+.head2:after,
+.foot2:before,
+.foot2:after {
+    font-size: 0px; 
+    content: ".";
+    position: absolute;    
+}
+
+.head2:before {
+    border-top: 0px solid var(--bg);
+    border-right: 0px solid transparent;
+    left: 0;
+    top: 0;
+}
+
+.head2:after {
+    border-top: 0px solid var(--bg);
+    border-left: 0px solid transparent;
+    right: 0;
+    top: 0;
+}
+
+.foot2:before {
+    border-bottom: var(--cSize) solid var(--bg);
+    border-right: var(--cSize) solid transparent;
+    left: 0;
+    bottom: 0;
+}
+
+.foot2:after {
+    border-bottom: 0px solid var(--bg);
+    border-left: 0px solid transparent;
+    right: 0;
+    bottom: 0;
+}
+
+.box3 {
+    padding: 0px;
+    border-width: 0px;
+    margin: 0;
+    margin-left: 6.6vw;
+    margin-right: 6.6vw;
+    margin-top:65px;
+    width: calc(var(--boxW)/2);
+    height: calc(var(--boxH) * 2);
+    position: relative;
+    background: var(--box);
+    background-attachment: fixed;
+    left: calc(var(--boxW) + 100px);
+    top: calc(calc(-2 * var(--boxH)) - 100px);
+}
+
+.head3 {
+    margin-left:10px;
+}
+
+.cont3 {
+    border-left: 0px solid Black;
+    border-right: 0px solid Black;
+    margin-left:10px;
+}
+
+.head3:before,
+.head3:after,
+.foot3:before,
+.foot3:after {
+    font-size: 0px; 
+    content: ".";
+    position: absolute;    
+}
+
+.head3:before {
+    border-top: 0px solid var(--bg);
+    border-right: 0px solid transparent;
+    left: 0;
+    top: 0;
+}
+
+.head3:after {
+    border-top: var(--cSize) solid var(--bg);
+    border-left: var(--cSize) solid transparent;
+    right: 0;
+    top: 0;
+}
+
+.foot3:before {
+    border-bottom: 0px solid var(--bg);
+    border-right: 0px solid transparent;
+    left: 0;
+    bottom: 0;
+}
+
+.foot3:after {
+    border-bottom: 0px solid var(--bg);
+    border-left: 0px solid transparent;
+    right: 0;
+    bottom: 0;
+}
+
+.box4 {
+    padding: 0px;
+    height:var(--boxH);
+    border-width: 0px;
+    margin: 0;
+    margin-left: 6.6vw;
+    margin-right: auto;
+    width: var(--boxW);
+    top: calc(calc(-2 * var(--boxH)) - 50px);
+    position: relative;
+    background: var(--box);
+    background-attachment: fixed;
+    left: calc(calc(var(--boxW) / 2) + 100px);
+}
+
+.head4 {
+    
+    margin-left: calc(var(--cSize)/2);
+}
+
+.cont4 {
+    border-left: 0px solid Black;
+    border-right: 0px solid Black;
+    margin-left: var(--cSize);
+}
+
+.head4:before,
+.head4:after,
+.foot4:before,
+.foot4:after {
+    font-size: 0px; 
+    content: ".";
+    position: absolute;    
+}
+
+.head4:before {
+    border-top: 0px solid var(--bg);
+    border-right: 0px solid transparent;
+    left: 0;
+    top: 0;
+}
+
+.head4:after {
+    border-top: var(--cSize) solid var(--bg);
+    border-left: var(--cSize) solid transparent;
+    right: 0;
+    top: 0;
+}
+
+.foot4:before {
+    border-bottom: 0px solid var(--bg);
+    border-right: 0px solid transparent;
+    left: 0;
+    bottom: 0;
+}
+
+.foot4:after {
+    border-bottom: 0px solid var(--bg);
+    border-left: 0px solid transparent;
+    right: 0;
+    bottom: 0;
+}
+
+.box5 {
+    padding: 0px;
+    
+    border-width: 0px;
+    margin: 0;
+    margin-left: 6.6vw;
+    margin-right: 6.6vw;
+    margin-top:65px;
+    width: calc(var(--boxW)/2);
+    height: calc(var(--boxH) * 2);
+    position: relative;
+    background: var(--box);
+    background-attachment: fixed;
+    top: calc(calc(-3 * var(--boxH)) - 115px);
+}
+
+.head5 {
+    margin-left:10px;
+    
+}
+
+.cont5 {
+    border-left: 0px solid Black;
+    border-right: 0px solid Black;
+    margin-left:10px;
+}
+
+.head5:before,
+.head5:after,
+.foot5:before,
+.foot5:after {
+    font-size: 0px; 
+    content: ".";
+    position: absolute;    
+}
+
+.head5:before {
+    border-top: 0px solid var(--bg);
+    border-right: 0px solid transparent;
+    left: 0;
+    top: 0;
+}
+
+.head5:after {
+    border-top: var(--cSize) solid var(--bg);
+    border-left: var(--cSize) solid transparent;
+    right: 0;
+    top: 0;
+}
+
+.foot5:before {
+    border-bottom: var(--cSize) solid var(--bg);
+    border-right: var(--cSize) solid transparent;
+    left: 0;
+    bottom: 0;
+}
+
+.foot5:after {
+    border-bottom: 0px solid var(--bg);
+    border-left: 0px solid transparent;
+    right: 0;
+    bottom: 0;
+}
+
+.box6 {
+    padding: 0px;
+    height:calc(var(--boxH) - 32px);
+    border-width: 0px;
+    margin: 0;
+    margin-left: 6.6vw;
+    margin-right: auto;
+    width: calc(var(--boxW) + 110px);
+    top: calc(calc(-4 * var(--boxH)) - 83px);
+    position: relative;
+    background: var(--box);
+    background-attachment: fixed;
+    left: calc(calc(var(--boxW)/2) - 4px);
+}
+
+/* home page code */
+
+.box7 {
+    padding: 0px;
+    border-width: 0px;
+    margin: 0;
+    margin-left: 6.6vw;
+    margin-right: 6.6vw;
+    width: calc(var(--boxW)/2);
+    height: calc(var(--boxH) * 2);
+    position: relative;
+    background: var(--box);
+    background-attachment: fixed;
+}
+
+.head7 {
+    margin-left: 10px;
+    margin-right: var(--cSize);
+}
+
+.cont7 {
+    border-left: 0px solid Black;
+    border-right: 0px solid Black;
+    margin-left: 10px;
+}
+
+.head7:before,
+.head7:after {
+    font-size: 0px; 
+    content: ".";
+    position: absolute;    
+}
+
+.head7:before {
+    border-top: 0px solid var(--bg);
+    border-right: 0px solid transparent;
+    left: 0;
+    top: 0;
+}
+
+.head7:after {
+    border-top: var(--cSize) solid var(--bg);
+    border-left: var(--cSize) solid transparent;
+    right: 0;
+    top: 0;
+}
+
+.topLeft {
+    float:left;
+}
+
+/*hero img code*/
+
+.hero-image {
+    background: url("../images/bannerBG3.png");
+    height: 50%;
+    background-position: center;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.hero-text1 {
+    text-align: left;
+    position: absolute;   
+    color: rgb(197, 172, 172);
+    margin: 0.5%
+}
+
+.hero-text2 {
+    text-align: center;
+    position: absolute;
+    margin: 0;
+    top: 25%;
+    left: 37.5%;
+    color: rgb(197, 172, 172);
+    
+}
+
+.hero-text3 {
+    text-align: bottom;
+    position: absolute; 
+    top: 70%;
+    left: 95%;
+    color: rgb(197, 172, 172);
+    margin-right:1%;
+}
+
+.hero-text:hover, .hero-text:active, .hero-text:focus {
+    background: var(--box);
+    border-radius: 10px;
+    color: rgb(197, 172, 172);
+}

@@ -1,0 +1,9 @@
+<<<<<<< HEAD
+<<<<<<< HEAD
+Error
+=======
+This should be a conflict
+>>>>>>> conflict
+=======
+This should be a conflict help
+>>>>>>> conflict

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<!-- This website template was created by: Student's First Name Student's Last Name -->
+<html lang="en">
+  <head>
+    <title>Nathan Allen Bear</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="images/logo.ico" />
+    <link rel="icon" type="image/png" sizes="32x32" href="images/logo-32.ico" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="images/apple-touch-icon.png"
+    />
+    <link rel="icon" sizes="192x192" href="images/android-chrome-192.png" />
+  </head>
+  <body>
+    <div id="container">
+      <div class="nav">
+        <!-- Use the header area for the website name or logo -->
+        <header>
+          <a href="index.html"
+            ><img
+              class="Logo"
+              src="images/apple-touch-icon.png"
+              alt="C² Development Logo"
+          /></a>
+        </header>
+
+        <!-- Use the nav area to add hyperlinks to other pages within the website -->
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="family.html">Family</a></li>
+            <li><a href="interests.html">Interests</a></li>
+            <li><a href="goal.html">Goals</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+      <!-- Hero Image -->
+      <div id="hero" class="tablet-desktop">
+        <img src="images/swishDM1.png" alt="Place Holder Hero Image" />
+      </div>
+
+      <!-- Use the main area to add the main content of the webpage -->
+      <main>
+        <div>
+          <form>
+            <!-- Start Form -->
+            <div class="three-columns">
+              <fieldset class="grid-padding">
+                <legend>Contact Information</legend>
+                <label for="fName">First Name:</label>
+                <input type="text" name="fName" id="fName" required />
+
+                <label for="lName">Last Name:</label>
+                <input type="text" name="lName" id="lName" required />
+
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" required />
+
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" required />
+              </fieldset>
+
+              <fieldset class="grid-padding">
+                <legend>Please select your age:</legend>
+                <input type="radio" id="age1" name="age" value="12" />
+                <label for="age1">0-12</label>
+                <input type="radio" id="age2" name="age" value="17" />
+                <label for="age2">13-17</label>
+                <input type="radio" id="age3" name="age" value="18" />
+                <label for="age3">18+</label>
+              </fieldset>
+
+              <fieldset class="grid-padding">
+                <legend>Additional Advertising</legend>
+                <label for="BoolEmail"
+                  ><input
+                    type="checkbox"
+                    name="interest"
+                    id="BoolEmail"
+                    value="BoolEmail"
+                  />I would like to receive E-Mails</label
+                >
+
+                <label for="BoolTexts"
+                  ><input
+                    type="checkbox"
+                    name="interest"
+                    id="BoolTexts"
+                    value="BoolTexts"
+                  />I would like to receive Texts</label
+                >
+
+                <label for="fill"
+                  ><input
+                    type="checkbox"
+                    name="interest"
+                    id="fill"
+                    value="Filler"
+                  />I need a third Check Box for the assignment but can't think
+                  of context for it</label
+                >
+              </fieldset>
+            </div>
+            <fieldset class="grid-padding">
+              <legend>Referral Source</legend>
+              <label for="reference">How did you Hear about me?</label>
+              <select name="reference" id="reference">
+                <option value="ad">
+                  You're the teacher grading this assignment
+                </option>
+                <option value="friend">Friend</option>
+                <option value="google">Google</option>
+                <option value="social">Social Media</option>
+                <option value="other">Other</option>
+              </select>
+
+              <label for="questions">Questions?</label>
+              <textarea
+                id="questions"
+                name="questions"
+                rows="5"
+                cols="35"
+              ></textarea>
+            </fieldset>
+
+            <input type="submit" id="submit" value="Submit" class="btn" />
+          </form>
+        </div>
+
+        <audio controls>
+          <source src="./posible_audio/20210410_180156_Normal.m4a" />
+          <source src="./media/ffc_audio.ogg" type="audio/ogg" />
+          <p>Your browser does not support the audio element.</p>
+        </audio>
+      </main>
+
+      <!-- Use the footer area to add webpage footer content -->
+      <footer>
+        <p>&copy; Copyright 2022. All Rights Reserved.</p>
+        <p>
+          <a href="mailto:nathanbear99@gmail.com">nathanbear99@gmail.com</a>
+        </p>
+      </footer>
+    </div>
+  </body>
+</html>
